@@ -17,9 +17,7 @@ This repository includes files for linting and an `app.rb` which holds the main 
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
   - [👥 Authors ](#-authors-)
-  - [👤 **Innocent Ndahimana**](#-innocent-ndahimana)
-  - [👤 **Anand Mohan Pathak**](#-anand-mohan-pathak)
-  - [🔭 Future Features ](#-future-features-)
+  - [� Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
@@ -86,13 +84,13 @@ Clone this repository to your desired folder:
 - LinkedIn: [hassanShakur](https://linkedin.com/in/hassanShakur)
 
 
-## 👤 **Innocent Ndahimana**
+ 👤 **Innocent Ndahimana**
 
 - GitHub: [@innocent259](https://github.com/Innocent259)
 - Twitter: [@innocentndahimana](https://www.linkedin.com/in/innocent259/)
 - LinkedIn: [@innocentndahimana](https://twitter.com/ndahimana259)
 
-## 👤 **Anand Mohan Pathak**
+ 👤 **Anand Mohan Pathak**
 
 - GitHub: [Anand8317](https://github.com/Anand8317)
 - Twitter: [AnandPathak](https://twitter.com/anand029)
