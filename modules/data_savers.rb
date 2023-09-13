@@ -23,6 +23,6 @@ module DataSavers
         'color' => label.color
       }
     end
-    File.write('/data/labels.json', labels_data.to_json) unless labels_data.empty?
+    File.write('data/labels.json', labels_data.to_json) unless labels_data.empty?
   end
 end

@@ -23,7 +23,7 @@ class App
 
   def initialize
     @books = load_books
-    @labels = []
+    @labels = load_labels
   end
 
   def run
@@ -32,6 +32,7 @@ class App
 
   def quit
     save_books
+    save_labels
     puts 'Thank you for using the App! Have a nice time!'
   end
 end

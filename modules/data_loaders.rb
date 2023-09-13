@@ -17,6 +17,23 @@ module DataLoaders
     loaded_books
   end
 
+  def load_labels
+    file_path = 'data/labels.json'
+    return [] unless File.exist?(file_path)
+
+    loaded_labels = []
+    labels_data = load_file(file_path)
+
+    labels_data.each do |label|
+      color = label['color']
+      title = label['title']
+      new_label = Label.new(title, color)
+      loaded_labels << new_label
+    end
+
+    loaded_labels
+  end
+
   def load_file(path)
     file = File.open(path)
     data = JSON.parse(file.read)
