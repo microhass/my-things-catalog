@@ -7,12 +7,13 @@ module ObjectCreators
   end
 
   def create_book
-    puts 'Publish date: '
+    print 'Publish date: '
     publish_date = gets.chomp
-    puts 'Publisher: '
+    print 'Publisher: '
     publisher = gets.chomp
-    puts 'Cover state [good/bad]: '
+    print 'Cover state [good/bad]: '
     cover_state = gets.chomp
     @books << Book.new(publisher, cover_state, publish_date)
+    print 'Book created successfully!'
   end
 end

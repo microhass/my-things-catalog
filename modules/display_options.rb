@@ -10,6 +10,19 @@ module DisplayOptions
     print 'Enter your choice: '
   end
 
+  def show_list_item_options
+    puts "\n
+      1. List all books
+      2. List all games
+      3. List all movies
+      4. List all music albums
+      5. Exit\n
+      "
+    print 'Enter your choice: '
+    choice = validate_input(gets.chomp.to_i, 5)
+    list_item_handler(choice)
+  end
+
   def show_create_item_options
     puts "\n
       1. Create a book
@@ -25,8 +38,9 @@ module DisplayOptions
 
   def show_extra_options(choice)
     case choice
+    when 2 then show_list_item_options
     when 4 then show_create_item_options
-    when 1, 2, 3 then puts 'Functionalities not implemented!'
+    when 1, 3 then puts 'Functionalities not implemented!'
     end
   end
 end

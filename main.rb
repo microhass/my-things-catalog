@@ -10,7 +10,6 @@ def main
     choice = app.validate_input(input, 5)
     break if choice == 5
 
-    puts "You entered #{choice}"
     app.show_extra_options(choice)
   end
 
