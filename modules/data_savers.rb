@@ -12,4 +12,17 @@ module DataSavers
     end
     File.write('/data/books.json', books_data.to_json) unless books_data.empty?
   end
+
+  def save_labels
+    labels_data = []
+    @labels.each do |_label|
+      labels_data << {
+        'id' => item.id.to_s,
+        'class' => item.class,
+        'title' => item.title,
+        'color' => item.color
+      }
+    end
+    File.write('/data/labels.json', labels_data.to_json) unless labels_data.empty?
+  end
 end
