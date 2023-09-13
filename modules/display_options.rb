@@ -68,7 +68,6 @@ module DisplayOptions
     when 2 then show_list_item_options
     when 3 then show_create_assoc_options
     when 4 then show_create_item_options
-    when 1, 3 then puts 'Functionalities not implemented!'
     end
   end
 end
