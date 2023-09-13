@@ -7,11 +7,11 @@ def main
   loop do
     app.show_initial_options
     input = gets.chomp.to_i
-    choice = app.validate_input(input, 5)
-    break if choice == 5
+    choice = app.validate_input(input, 10)
+    break if choice == 10
 
     puts "You entered #{choice}"
-    # app.show_extra_options(choice)
+    app.show_extra_options(choice)
   end
 
   app.quit
