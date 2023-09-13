@@ -11,6 +11,7 @@ require_relative 'modules/validate_input'
 require_relative 'modules/object_creators'
 require_relative 'modules/items_display'
 require_relative 'modules/data_savers'
+require_relative 'modules/data_loaders'
 
 class App
   include DisplayOptions
@@ -18,9 +19,10 @@ class App
   include ObjectCreators
   include ItemsDisplay
   include DataSavers
+  include DataLoaders
 
   def initialize
-    @books = []
+    @books = load_books
     @labels = []
   end
 

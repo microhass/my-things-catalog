@@ -27,7 +27,7 @@ module ObjectCreators
   def create_label
     print "\nTitle: "
     title = gets.chomp
-    print "\nColor: "
+    print 'Color: '
     color = gets.chomp
     @labels << Label.new(title, color)
     print 'Label created successfully!'
