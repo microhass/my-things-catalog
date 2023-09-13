@@ -8,6 +8,7 @@ require_relative 'modules/validate_input'
 class App
   include DisplayOptions
   include InputValidators
+  include ObjectCreators
 
   def run
     puts "Welcome to My Things Catalog App!\n"
