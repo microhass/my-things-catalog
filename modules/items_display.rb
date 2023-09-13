@@ -13,6 +13,21 @@ module ItemsDisplay
     end
   end
 
+  def display_labels
+    return puts 'You have no labels!' if @labels.empty?
+
+    @labels.each_with_index do |label, index|
+      puts "#{index + 1}. #{label.title.capitalize}"
+    end
+  end
+
+  def list_assoc_handler(choice)
+    case choice
+    when 3 then display_labels
+    when 1, 2, 4 then puts 'Functionalities not implemented!'
+    end
+  end
+
   def list_item_handler(choice)
     case choice
     when 1 then display_books

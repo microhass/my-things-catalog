@@ -10,6 +10,19 @@ module DisplayOptions
     print 'Enter your choice: '
   end
 
+  def show_list_assoc_options
+    puts "\n
+      1. List all authors
+      2. List all genres
+      3. List all labels
+      4. List all sources
+      5. Exit\n
+      "
+    print 'Enter your choice: '
+    choice = validate_input(gets.chomp.to_i, 5)
+    list_assoc_handler(choice)
+  end
+
   def show_list_item_options
     puts "\n
       1. List all books
@@ -38,6 +51,7 @@ module DisplayOptions
 
   def show_extra_options(choice)
     case choice
+    when 1 then show_list_assoc_options
     when 2 then show_list_item_options
     when 4 then show_create_item_options
     when 1, 3 then puts 'Functionalities not implemented!'
