@@ -11,7 +11,7 @@ def main
     break if choice == 5
 
     puts "You entered #{choice}"
-    # app.show_extra_options(choice)
+    app.show_extra_options(choice)
   end
 
   app.quit
