@@ -27,13 +27,13 @@ module DataSavers
   end
 
   def save_author_game
-    File.open('author.json', 'w') do |file|
+    File.open('data/author.json', 'w') do |file|
       ObjectSpace.each_object(Author) do |obj|
           file.puts JSON.generate(obj)
       end
     end
 
-    File.open('game.json', 'w') do |file|
+    File.open('data/game.json', 'w') do |file|
       ObjectSpace.each_object(Game) do |obj|
           file.puts JSON.generate(obj)
       end

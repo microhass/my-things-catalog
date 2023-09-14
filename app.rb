@@ -26,6 +26,7 @@ class App
   def initialize
     @books = load_books
     @labels = load_labels
+    load_author_game
   end
 
   def run
@@ -35,6 +36,7 @@ class App
   def quit
     save_books
     save_labels
+    save_author_game
     puts 'Thank you for using the App! Have a nice time!'
   end
 end
