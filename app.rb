@@ -10,10 +10,6 @@ require_relative 'classes/label'
 # Modules
 require_relative 'modules/display_options'
 require_relative 'modules/validate_input'
-require_relative 'modules/list_games'
-require_relative 'modules/list_authors'
-require_relative 'modules/create_game'
-require_relative 'modules/show_extra_options'
 require_relative 'modules/object_creators'
 require_relative 'modules/items_display'
 require_relative 'modules/data_savers'
@@ -22,10 +18,6 @@ require_relative 'modules/data_loaders'
 class App
   include DisplayOptions
   include InputValidators
-  include ShowExtOpt
-  include CreateGame
-  include ListAuthors
-  include ListGames
   include ObjectCreators
   include ItemsDisplay
   include DataSavers

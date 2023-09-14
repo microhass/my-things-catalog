@@ -1,16 +1,11 @@
 module DisplayOptions
   def show_initial_options
     puts "\n
-    1. List all books
-    2. List all music albums
-    3. List of games
-    4. List all genres (e.g 'Comedy', 'Thriller')
-    5. List all labels (e.g. 'Gift', 'New')
-    6. List all authors (e.g. 'Stephen King')
-    7. Add a book
-    8. Add a music album
-    9. Add a game
-    10. Exit\n
+    1. List item association (Eg. List all authors)
+    2. List catalog items (Eg. List all books)
+    3. Create item association (Eg. Author)
+    4. Create catalog item (Eg. Book)
+    5. Exit\n
     "
     print 'Enter your choice: '
   end
