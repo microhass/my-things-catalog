@@ -21,17 +21,36 @@ module ItemsDisplay
     end
   end
 
+  def list_authors
+    s_no = 1
+    ObjectSpace.each_object(Author) do |obj|
+      puts "Serial Number: #{s_no}, First Name: #{obj.first_name} Last Name: #{obj.last_name}"
+      s_no += 1
+    end
+  end
+
+  def list_games
+    s_no = 1
+    ObjectSpace.each_object(Game) do |obj|
+      print "Serial Number: #{s_no}, Multiplayer: #{obj.multiplayer} Last played at: #{obj.last_played_at} "
+      puts "Archived: #{obj.archived} Publish date: #{obj.publish_date}"
+      s_no += 1
+    end
+  end
+
   def list_assoc_handler(choice)
     case choice
+    when 1 then list_authors
     when 3 then display_labels
-    when 1, 2, 4 then puts 'Functionalities not implemented!'
+    when 2, 4 then puts 'Functionalities not implemented!'
     end
   end
 
   def list_item_handler(choice)
     case choice
     when 1 then display_books
-    when 2, 3, 4 then puts 'Functionalities not implemented!'
+    when 2 then list_games
+    when 3, 4 then puts 'Functionalities not implemented!'
     end
   end
 end

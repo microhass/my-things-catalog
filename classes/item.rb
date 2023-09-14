@@ -4,7 +4,7 @@ class Item
   def initialize(archived, publish_date)
     @id = generate_unique_id
     @archived = archived
-    @publish_date = Time.new(publish_date)
+    @publish_date = publish_date
     @genre = nil
     @author = nil
     @source = nil
