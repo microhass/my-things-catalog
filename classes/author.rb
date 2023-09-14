@@ -14,6 +14,17 @@ class Author
     item.author = self
   end
 
+  def to_json(*args)
+    {
+      JSON.create_id => self.class.name,
+      'a' => [first_name, last_name]
+    }.to_json(*args)
+  end
+
+  def self.json_create(object)
+    new(*object['a'])
+  end
+
   private
 
   def generate_unique_id

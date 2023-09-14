@@ -25,4 +25,18 @@ module DataSavers
     end
     File.write('data/labels.json', labels_data.to_json) unless labels_data.empty?
   end
+
+  def save_author_game
+    File.open('data/author.json', 'w') do |file|
+      ObjectSpace.each_object(Author) do |obj|
+        file.puts JSON.generate(obj)
+      end
+    end
+
+    File.open('data/game.json', 'w') do |file|
+      ObjectSpace.each_object(Game) do |obj|
+        file.puts JSON.generate(obj)
+      end
+    end
+  end
 end

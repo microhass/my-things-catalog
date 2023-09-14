@@ -40,4 +40,18 @@ module DataLoaders
     file.close
     data
   end
+
+  def load_author_game
+    if File.exist?('data/author.json')
+      File.foreach('data/author.json') do |line|
+        JSON.parse(line, create_additions: true)
+      end
+    end
+
+    return unless File.exist?('data/game.json')
+
+    File.foreach('data/game.json') do |line|
+      JSON.parse(line, create_additions: true)
+    end
+  end
 end
