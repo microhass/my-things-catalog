@@ -8,7 +8,7 @@ def main
     app.show_initial_options
     input = gets.chomp.to_i
     choice = app.validate_input(input, 10)
-    break if choice == 10
+    break if choice == 5
 
     puts "You entered #{choice}"
     app.show_extra_options(choice)
