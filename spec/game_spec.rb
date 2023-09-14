@@ -1,7 +1,8 @@
 require_relative 'helper_spec'
 
 describe Game do
-  let(:game) { Game.new(true, '27/03/2022') }
+  let(:author) { Author.new('Anand', 'Pathak') }
+  let(:game) { Game.new(true, '27/03/2022', 'Y', '27/03/2020', author) }
 
   context 'initialization' do
     it 'creates a game' do
