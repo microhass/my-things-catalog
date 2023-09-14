@@ -42,7 +42,7 @@ module ItemsDisplay
     case choice
     when 1 then list_authors
     when 3 then display_labels
-    when 1, 2, 4 then puts 'Functionalities not implemented!'
+    when 2, 4 then puts 'Functionalities not implemented!'
     end
   end
 

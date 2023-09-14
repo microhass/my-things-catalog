@@ -48,10 +48,10 @@ module DataLoaders
       end
     end
 
-    if File.exist?('data/game.json')
-      File.foreach('data/game.json') do |line|
-        s = JSON.parse(line, create_additions: true)
-      end
+    return unless File.exist?('data/game.json')
+
+    File.foreach('data/game.json') do |line|
+      JSON.parse(line, create_additions: true)
     end
   end
 end

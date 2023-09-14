@@ -3,7 +3,7 @@ module ObjectCreators
     case choice
     when 1 then create_author
     when 3 then create_label
-    when 1, 2, 4 then 'Functionalities not implemented!'
+    when 2, 4 then 'Functionalities not implemented!'
     end
   end
 
@@ -55,5 +55,6 @@ module ObjectCreators
     print 'Last name: '
     ln = gets.chomp
     Author.new(fn, ln)
+    puts 'Author created successfully.'
   end
 end
