@@ -1,7 +1,7 @@
 class Item
   attr_accessor :archived, :publish_date, :genre, :author, :source, :label
 
-  def initialize(_id, archived, publish_date)
+  def initialize(archived, publish_date)
     @id = generate_unique_id
     @archived = archived
     @publish_date = publish_date
