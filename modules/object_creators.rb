@@ -4,7 +4,6 @@ module ObjectCreators
     when 1 then create_author
     when 2 then create_genre
     when 3 then create_label
-    when 4 then 'Functionalities not implemented!'
     end
   end
 
@@ -12,8 +11,7 @@ module ObjectCreators
     case choice
     when 1 then create_book
     when 2 then create_game
-    when 3 then 'Functionalities not implemented!'
-    when 4 then create_music
+    when 3 then create_music
     end
   end
 

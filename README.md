@@ -17,7 +17,7 @@ This repository includes files for linting and an `app.rb` which holds the main 
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
   - [👥 Authors ](#-authors-)
-  - [� Future Features ](#-future-features-)
+  - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
@@ -27,7 +27,7 @@ This repository includes files for linting and an `app.rb` which holds the main 
 
 # 📖 [my-things-catalog] <a name="about-project"></a>
 
-**[my-things-catalog]** is a console app that will help you to keep a record of different types of things you own: books, music albums, movies, and games. Everything will be based on the UML class diagram presented below. The data will be stored in both JSON files & a database with tables structure analogical to the program's class structure.
+**[my-things-catalog]** is a console app that will help you to keep a record of different types of things you own: books, music albums, and games. Everything will be based on the UML class diagram presented below. The data will be stored in both JSON files & a database with tables structure analogical to the program's class structure.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -44,7 +44,7 @@ This repository includes files for linting and an `app.rb` which holds the main 
 
 ### Key Features <a name="key-features"></a>
 
-- **Create items (Book, Album, Movie, Game).**
+- **Create items (Book, Album, Game).**
 - **Link an item to authors, labels etc.**
 - **Save data in json.**
 
