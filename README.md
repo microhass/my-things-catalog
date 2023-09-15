@@ -13,6 +13,7 @@ This repository includes files for linting and an `app.rb` which holds the main 
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [Presentation Video](#presentation-video)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -49,6 +50,10 @@ This repository includes files for linting and an `app.rb` which holds the main 
 - **Save data in json.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Presentation Video
+
+Find the presentation video 👉 [here](https://clipchamp.com/watch/xoIv2cc0vaF)
 
 <!-- GETTING STARTED -->
 
