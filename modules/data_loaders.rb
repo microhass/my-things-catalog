@@ -54,4 +54,18 @@ module DataLoaders
       JSON.parse(line, create_additions: true)
     end
   end
+
+  def load_genre_music
+    if File.exist?('data/genre.json')
+      File.foreach('data/genre.json') do |line|
+        JSON.parse(line, create_additions: true)
+      end
+    end
+
+    return unless File.exist?('data/music.json')
+
+    File.foreach('data/music.json') do |line|
+      JSON.parse(line, create_additions: true)
+    end
+  end
 end

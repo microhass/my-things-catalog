@@ -38,11 +38,28 @@ module ItemsDisplay
     end
   end
 
+  def list_genre
+    s_no = 1
+    ObjectSpace.each_object(Genre) do |obj|
+      puts "Serial Number: #{s_no}, Name: #{obj.name}"
+      s_no += 1
+    end
+  end
+
+  def list_music
+    s_no = 1
+    ObjectSpace.each_object(MusicAlbum) do |obj|
+      puts "Serial Number: #{s_no}, Id: #{obj.id} On Spotify: #{obj.on_spotify}"
+      s_no += 1
+    end
+  end
+
   def list_assoc_handler(choice)
     case choice
     when 1 then list_authors
+    when 2 then list_genre
     when 3 then display_labels
-    when 2, 4 then puts 'Functionalities not implemented!'
+    when 4 then puts 'Functionalities not implemented!'
     end
   end
 
@@ -50,7 +67,8 @@ module ItemsDisplay
     case choice
     when 1 then display_books
     when 2 then list_games
-    when 3, 4 then puts 'Functionalities not implemented!'
+    when 3 then puts 'Functionalities not implemented!'
+    when 4 then list_music
     end
   end
 end

@@ -1,7 +1,7 @@
 class Genre
   attr_accessor :id, :name, :items
 
-  def initialize(_id, name)
+  def initialize(name)
     @id = generate_unique_id
     @name = name
     @items = []
@@ -10,6 +10,17 @@ class Genre
   def add_item(item)
     @items << item
     item.genre = self
+  end
+
+  def to_json(*args)
+    {
+      JSON.create_id => self.class.name,
+      'a' => [name]
+    }.to_json(*args)
+  end
+
+  def self.json_create(object)
+    new(*object['a'])
   end
 
   private
