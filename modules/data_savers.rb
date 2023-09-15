@@ -42,7 +42,7 @@ module DataSavers
 
   def save_genre_music
     File.open('data/genre.json', 'w') do |file|
-      ObjectSpace.each_object(Label) do |obj|
+      ObjectSpace.each_object(Genre) do |obj|
         file.puts JSON.generate(obj)
       end
     end
