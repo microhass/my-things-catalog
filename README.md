@@ -13,12 +13,11 @@ This repository includes files for linting and an `app.rb` which holds the main 
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [Presentation Video](#presentation-video)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
   - [👥 Authors ](#-authors-)
-  - [👤 **Innocent Ndahimana**](#-innocent-ndahimana)
-  - [👤 **Anand Mohan Pathak**](#-anand-mohan-pathak)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
@@ -29,7 +28,7 @@ This repository includes files for linting and an `app.rb` which holds the main 
 
 # 📖 [my-things-catalog] <a name="about-project"></a>
 
-**[my-things-catalog]** is a console app that will help you to keep a record of different types of things you own: books, music albums, movies, and games. Everything will be based on the UML class diagram presented below. The data will be stored in both JSON files & a database with tables structure analogical to the program's class structure.
+**[my-things-catalog]** is a console app that will help you to keep a record of different types of things you own: books, music albums, and games. Everything will be based on the UML class diagram presented below. The data will be stored in both JSON files & a database with tables structure analogical to the program's class structure.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -46,11 +45,15 @@ This repository includes files for linting and an `app.rb` which holds the main 
 
 ### Key Features <a name="key-features"></a>
 
-- **Create items (Book, Album, Movie, Game).**
+- **Create items (Book, Album, Game).**
 - **Link an item to authors, labels etc.**
 - **Save data in json.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Presentation Video
+
+Find the presentation video 👉 [here](https://clipchamp.com/watch/xoIv2cc0vaF)
 
 <!-- GETTING STARTED -->
 
@@ -86,13 +89,13 @@ Clone this repository to your desired folder:
 - LinkedIn: [hassanShakur](https://linkedin.com/in/hassanShakur)
 
 
-## 👤 **Innocent Ndahimana**
+ 👤 **Innocent Ndahimana**
 
 - GitHub: [@innocent259](https://github.com/Innocent259)
 - Twitter: [@innocentndahimana](https://www.linkedin.com/in/innocent259/)
 - LinkedIn: [@innocentndahimana](https://twitter.com/ndahimana259)
 
-## 👤 **Anand Mohan Pathak**
+ 👤 **Anand Mohan Pathak**
 
 - GitHub: [Anand8317](https://github.com/Anand8317)
 - Twitter: [AnandPathak](https://twitter.com/anand029)
