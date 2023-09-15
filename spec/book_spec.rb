@@ -17,22 +17,4 @@ describe Book do
       expect(@book.publisher).to eq('Epub Publishers')
     end
   end
-
-  # describe '#move_to_archive' do
-  #   it 'sets archived true if in bad state' do
-  #     archive_status = @book.move_to_archive
-  #     expect(archive_status).to eq(true)
-  #   end
-
-  #   it 'sets archived true if is older than 10 years' do
-  #     @book = Book.new('Test pub', 'good', Time.new.year - 11)
-  #     archive_status = @book.move_to_archive
-  #     expect(archive_status).to eq(true)
-  #   end
-
-  #   it 'sets archived false if book in good state & younger than 10 yrs' do
-  #     @book = Book.new('Test pub', 'good', Time.now.year - 4)
-  #     expect(@book.move_to_archive).to eq(false)
-  #   end
-  # end
 end
