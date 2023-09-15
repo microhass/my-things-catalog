@@ -2,8 +2,9 @@ module ObjectCreators
   def create_assoc_handler(choice)
     case choice
     when 1 then create_author
+    when 2 then create_genre
     when 3 then create_label
-    when 2, 4 then 'Functionalities not implemented!'
+    when 4 then 'Functionalities not implemented!'
     end
   end
 
@@ -11,7 +12,8 @@ module ObjectCreators
     case choice
     when 1 then create_book
     when 2 then create_game
-    when 3, 4 then 'Functionalities not implemented!'
+    when 3 then 'Functionalities not implemented!'
+    when 4 then create_music
     end
   end
 
@@ -56,5 +58,21 @@ module ObjectCreators
     ln = gets.chomp
     Author.new(fn, ln)
     puts 'Author created successfully.'
+  end
+
+  def create_genre
+    print 'Name: '
+    name = gets.chomp
+    Genre.new(name)
+  end
+
+  def create_music
+    print 'Archived: '
+    arc = gets.chomp
+    print 'Publish date: '
+    pd = gets.chomp
+    print 'On spotify'
+    os = gets.chomp
+    MusicAlbum.new(arc, pd, os)
   end
 end

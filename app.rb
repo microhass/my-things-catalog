@@ -6,6 +6,8 @@ require_relative 'classes/game'
 require_relative 'classes/author'
 require_relative 'classes/book'
 require_relative 'classes/label'
+require_relative 'classes/music_album'
+require_relative 'classes/genre'
 
 # Modules
 require_relative 'modules/display_options'
@@ -27,6 +29,7 @@ class App
     @books = load_books
     @labels = load_labels
     load_author_game
+    load_genre_music
   end
 
   def run
@@ -37,6 +40,7 @@ class App
     save_books
     save_labels
     save_author_game
+    save_genre_music
     puts 'Thank you for using the App! Have a nice time!'
   end
 end
