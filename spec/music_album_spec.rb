@@ -5,7 +5,7 @@ describe MusicAlbum do
   let(:publish_date) { Date.new(2023, 1, 1) }
   let(:on_spotify) { true }
 
-  subject(:album) { described_class.new(true, publish_date, true) } # Provide 'false' for 'archived'
+  subject(:album) { described_class.new(true, publish_date, true) }
 
   describe '#can_be_archived?' do
     context 'when super is false' do
