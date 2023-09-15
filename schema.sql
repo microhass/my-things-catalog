@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS labels (
     id INT GENERATED ALWAYS AS IDENTITY,
     title VARCHAR(100),
     color VARCHAR(100),
-    items INT REFERENCES (books, music_albums, movies, games),
+    items INT REFERENCES (books, music_albums, games),
     PRIMARY KEY(id, items)
 );
 
@@ -40,4 +40,25 @@ CREATE TABLE games (
     publish_date DATE,
     archived BOOLEAN,
     PRIMARY KEY(id)
+);
+
+-- Create Music Albums table
+CREATE TABLE IF NOT EXISTS music_albums (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    on_spotify BOOLEAN NOT NULL,
+    genre VARCHAR(100) REFERENCES genres(name),
+    author VARCHAR(100) REFERENCES authors(first_name),
+    source VARCHAR(100) REFERENCES sources(name),
+    label VARCHAR(100) REFERENCES labels(title),
+    publish_date DATE,
+    archived BOOLEAN,
+    PRIMARY KEY(id)
+);
+
+-- Create Genres table
+CREATE TABLE IF NOT EXISTS genres (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    name VARCHAR(100),
+    items INT REFERENCES (books, music_albums, games),
+    PRIMARY KEY(id, items)
 );
