@@ -64,6 +64,7 @@ module ObjectCreators
     print 'Name: '
     name = gets.chomp
     Genre.new(name)
+    print 'Genre created successfully'
   end
 
   def create_music
@@ -71,8 +72,9 @@ module ObjectCreators
     arc = gets.chomp
     print 'Publish date: '
     pd = gets.chomp
-    print 'On spotify'
+    print 'On spotify: '
     os = gets.chomp
     MusicAlbum.new(arc, pd, os)
+    print 'Music created successfully'
   end
 end
